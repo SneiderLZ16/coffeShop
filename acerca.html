@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de mi</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./Index.html"><span>Inicio</span></a></li>
+            <li><a href="./acerca.html"><span>Acerca de mí</span></a></li>
+            <li><a href="./Proyectos.html"><span>Mis proyectos</span></a></li>
+            <li><a href="./contacto.html"><span>Contáctenos</span></a></li>
+        </ul>
+    </nav>
+
+    <section id="acerca">
+        <h2>¿Como empezo esto?</h2>
+        <p>Hace un par de años empezo mi amor y curiosidad por el mundo de la programación. Esta misma me apasiona porque cada día trae nuevos desafíos que me motivan a aprender y crecer profesionalmente.</p>
+        <p>Además de la tecnología, me gustan mucho los deportes. Creo que mantenerme activo y practicar deportes ayuda a tener una mente clara y estar siempre enfocado en mis objetivos.</p>
+        <p>Me encanta combinar mi pasión por la programación con un estilo de vida saludable y dinámico.</p>
+
+        <!-- Contenedor de imágenes -->
+        <div class="imagenes-horizontal">
+            <img src="./images/bievenido.jpg" alt="Imagen 1">
+            <img src="./images/deporte.jpg" alt="Imagen 2">
+        </div>
+    </section>
+
+    <section id="acerca">
+        <p>
+            Inicie aprendiendo python, haciendo ejercicios basicos y avanzando a proyectos mas complejos. Después de un tiempo, decidí aprender a html, css y js para poder crear sitios web y aplicaciones web.
+        </p>
+        
+        <section id="lenguajes">
+            <h2>Lenguajes que utilizo</h2>
+            <div class="botones-3d">
+                <div class="btn-lenguaje html" onclick="mostrarInfo(this)">
+                    <span>HTML</span>
+                    <div class="info-lenguaje">
+                        <p>HTML (HyperText Markup Language) estructura el contenido de la web mediante etiquetas.</p>
+                        <img src="./images/html.jpeg" alt="Logo HTML" class="btn-imgs">
+                    </div>
+                </div>
+
+                <div class="btn-lenguaje css" onclick="mostrarInfo(this)">
+                    <span>CSS</s>
+                    <div class="info-lenguaje">
+                        <p>CSS permite aplicar estilos visuales como colores, bordes, animaciones y layouts.</p>
+                        <img src="./images/css.png" alt="CSS logo" class="btn-imgs">
+                    </div>
+                </div>
+
+                <div class="btn-lenguaje js" onclick="mostrarInfo(this)">
+                    <span>JavaScript</span>
+                    <div class="info-lenguaje">
+                        <p>JavaScript agrega interactividad y lógica a las páginas web, como botones dinámicos y validaciones.</p>
+                        <img src="./images/js.png" alt="JS logo" class="btn-imgs">
+                    </div>
+                </div>
+
+                <div class="btn-lenguaje python" onclick="mostrarInfo(this)">
+                    <span>Python</span>
+                    <div class="info-lenguaje">
+                        <p>Lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de software, la ciencia de datos y el machine learning</p>
+                        <img src="./images/python.png" alt="Python logo" class="btn-imgs">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kevin Londoño</p>
+        <p>Sígueme en:
+            <a href="https://www.instagram.com/sneiderlz/" target="_blank">Instagram</a> |
+            <a href="https://wa.me/573226486866" target="_blank">WhatsApp</a>
+        </p>
+    </footer>
+
+    <script>
+        function mostrarInfo(elemento) {
+        elemento.classList.toggle("activo");
+        }
+    </script>
+</body>
+</html>
