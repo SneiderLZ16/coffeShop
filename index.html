@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café de la Loma</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <header>
+    <nav>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="nav-menu">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#location">Ubicación</a></li>
+        <li><a href="#reservations">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <img src="assets/hero.jpg" alt="Imagen destacada del café" />
+      <div class="hero-text">
+        <h2>Bienvenido a Café de la Loma</h2>
+        <p>Sabores auténticos de las montañas</p>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Nuestro Menú</h2>
+      <div class="menu-categorias">
+        <div class="categoria"><h3>Café</h3></div>
+        <div class="categoria"><h3>Postres</h3></div>
+        <div class="categoria"><h3>Bebidas frías</h3></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos una cafetería artesanal que honra la tradición cafetera con ingredientes de origen local.</p>
+    </section>
+
+    <section id="location">
+      <h2>Ubicación y Horarios</h2>
+      <p>Nos encuentras en la Calle 123, Ciudad Café.</p>
+      <p>Abierto de lunes a sábado, 8:00 AM - 8:00 PM</p>
+      <div style="margin-top:1rem;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="reservations">
+      <h2>Reserva tu mesa</h2>
+      <form id="reservaForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required />
+        <label for="personas">Nº de personas:</label>
+        <input type="number" id="personas" name="personas" min="1" required />
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="galeria">
+        <img src="assets/productos/1.jpg" alt="foto1" />
+        <img src="assets/productos/2.jpg" alt="foto2" />
+        <img src="assets/productos/3.jpg" alt="foto3" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Café de la Loma. Todos los derechos reservados.</p>
+  </footer>
+
+  <button id="theme-toggle">🌙 Modo oscuro</button>
+  <script src="script.js"></script>
+</body>
+</html>
